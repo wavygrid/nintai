@@ -1,0 +1,768 @@
+.services {
+  padding-top: 120px;
+  min-height: 100vh;
+}
+
+.services-content {
+  padding: 6rem 0;
+  background: #ffffff;
+}
+
+.services-content .container {
+  max-width: 2200px;
+  margin: 0 auto;
+  padding: 0 8rem;
+}
+
+.hero-intro {
+  text-align: center;
+  padding: 4rem 0 8rem 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-intro h2 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 3.2rem;
+  color: #2c2c2c;
+  margin-bottom: 2.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.hero-intro p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: #8b7355;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.hero-stats {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-stats-row {
+  display: flex;
+  gap: 6rem;
+  align-items: center;
+}
+
+.hero-stats .stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.hero-stats .stat-label {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: #8b7355;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+}
+
+.hero-stats .stat-value {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  font-weight: 400;
+}
+
+.markets-stat {
+  width: 100%;
+}
+
+.markets-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 2rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.market-region {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.region-map {
+  width: 100%;
+  background: transparent;
+  padding: 0;
+  border: none;
+}
+
+.region-map svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.region-label {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  color: #2c2c2c;
+  font-weight: 600;
+}
+
+.content-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.packages-section {
+  padding: 12rem 0 0 0;
+  background: white;
+}
+
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.package-card {
+  background: #fafafa;
+  padding: 3rem;
+  border-radius: 8px;
+  border: 1px solid #e8e8e8;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+
+.package-card.featured {
+  background: white;
+  border: 2px solid #8b7355;
+}
+
+.package-badge {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #8b7355;
+  color: white;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
+  font-family: 'Crimson Text', serif;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.package-header h4 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.package-timeline {
+  font-family: 'Crimson Text', serif;
+  font-size: 1rem;
+  color: #8b7355;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.package-description {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #666;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.package-includes {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.package-includes span {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  color: #666;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.package-includes span::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #8b7355;
+  font-weight: 600;
+}
+
+.section-intro {
+  margin-bottom: 5rem;
+}
+
+.section-intro.centered {
+  text-align: center;
+}
+
+.section-intro h3 {
+  margin-top: 0;
+}
+
+.section-intro p {
+  margin-bottom: 0;
+}
+
+.section-intro h3 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 3.5rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.section-description {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.4rem;
+  color: #8b7355;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.comprehensive-section {
+  padding: 12rem 0;
+  background: white;
+}
+
+/* Methodology Flow */
+.methodology-block {
+  margin-bottom: 14rem;
+  position: relative;
+}
+
+.methodology-block::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -7rem;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #e8e8e8 20%, #e8e8e8 80%, transparent);
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 6rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header h3 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 3.5rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.header-description {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.4rem;
+  color: #8b7355;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.methodology-flow {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.flow-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.flow-arrow {
+  display: flex;
+  align-items: center;
+  padding-top: 2.5rem;
+  flex-shrink: 0;
+}
+
+.flow-arrow svg {
+  display: block;
+}
+
+.flow-number {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 4.5rem;
+  color: #8b7355;
+  font-weight: 400;
+  opacity: 0.15;
+  line-height: 1;
+  display: inline-block;
+}
+
+.flow-content h4 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 1.8rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.flow-content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #666;
+  margin: 0;
+}
+
+/* Services & Audience Asymmetric Layout */
+.services-audience-block {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 8rem;
+  align-items: start;
+}
+
+.primary-services h3 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 3.5rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 4rem;
+  line-height: 1.1;
+  position: relative;
+  padding-bottom: 2rem;
+  margin-top: 0;
+}
+
+.primary-services h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background: linear-gradient(to right, #8b7355, transparent);
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.service-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 6rem;
+  padding: 4rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+}
+
+.service-row:last-child {
+  border-bottom: none;
+}
+
+.service-row:hover {
+  padding-left: 1.5rem;
+  border-left: 3px solid #8b7355;
+  margin-left: -1.5rem;
+}
+
+.service-title {
+  padding-top: 0.3rem;
+}
+
+.service-title h4 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2.2rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.service-description p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 2;
+  color: #666;
+  margin: 0;
+}
+
+.audience-sidebar {
+  background: #fafafa;
+  border-radius: 0;
+  position: sticky;
+  top: 2rem;
+  border-left: 4px solid #8b7355;
+}
+
+.audience-content {
+  padding: 3rem;
+}
+
+.audience-content h3 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2.8rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  margin-top: 0;
+  line-height: 1.1;
+}
+
+.audience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.audience-item {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.audience-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 6px;
+  height: 6px;
+  background: #8b7355;
+  border-radius: 50%;
+  opacity: 0.4;
+}
+
+.audience-item h4 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 1.6rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 0.75rem;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.audience-item p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #666;
+  margin: 0;
+}
+
+.cta-section {
+  text-align: center;
+  background: #fafafa;
+  padding: 5rem 0;
+  border-radius: 0;
+  margin: 0 -8rem;
+}
+
+.cta-section h2 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2.5rem;
+  color: #2c2c2c;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.cta-section p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 3rem;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.1rem;
+  background: #2c2c2c;
+  color: white;
+  border: 1px solid #2c2c2c;
+  padding: 0.75rem 2rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background: #8b7355;
+  border-color: #8b7355;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding-top: 80px;
+  }
+
+  .services-content {
+    padding: 3rem 0;
+  }
+
+  .services-content .container {
+    padding: 0 1.5rem;
+  }
+
+  .hero-intro {
+    padding: 2rem 0 4rem 0;
+  }
+
+  .hero-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-intro p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .hero-stats {
+    margin-top: 3rem;
+    gap: 2rem;
+  }
+
+  .hero-stats-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .hero-stats .stat-label {
+    font-size: 0.85rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .hero-stats .stat-value {
+    font-size: 1.5rem;
+  }
+
+  .markets-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .region-label {
+    font-size: 1rem;
+  }
+
+  .comprehensive-section {
+    padding: 6rem 0;
+  }
+
+  .methodology-block {
+    margin-bottom: 8rem;
+  }
+
+  .methodology-block::after {
+    bottom: -4rem;
+  }
+
+  .section-header {
+    margin-bottom: 3rem;
+  }
+
+  .section-header h3 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-description {
+    font-size: 1.1rem;
+  }
+
+  .methodology-flow {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .flow-arrow {
+    display: none;
+  }
+
+  .flow-number {
+    font-size: 3.5rem;
+  }
+
+  .flow-content h4 {
+    font-size: 1.5rem;
+  }
+
+  .flow-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .services-audience-block {
+    grid-template-columns: 1fr;
+    gap: 5rem;
+  }
+
+  .primary-services h3 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .service-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+
+  .service-row:hover {
+    padding-left: 1rem;
+    margin-left: -1rem;
+  }
+
+  .service-title h4 {
+    font-size: 1.6rem;
+  }
+
+  .service-description p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  .audience-sidebar {
+    position: relative;
+    top: 0;
+    border-left: 3px solid #8b7355;
+  }
+
+  .audience-content {
+    padding: 2rem;
+  }
+
+  .audience-content h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .audience-list {
+    gap: 2rem;
+  }
+
+  .audience-item h4 {
+    font-size: 1.3rem;
+  }
+
+  .audience-item p {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .packages-section {
+    padding: 6rem 0 0 0;
+  }
+
+  .section-intro {
+    margin-bottom: 3rem;
+  }
+
+  .section-intro h3 {
+    font-size: 2.2rem;
+  }
+
+  .section-description {
+    font-size: 1.1rem;
+  }
+
+  .packages-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .package-card {
+    padding: 2.5rem 2rem;
+    gap: 1.5rem;
+  }
+
+  .package-header h4 {
+    font-size: 1.6rem;
+  }
+
+  .package-timeline {
+    font-size: 0.9rem;
+  }
+
+  .package-description {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .package-includes {
+    gap: 0.8rem;
+  }
+
+  .package-includes span {
+    font-size: 1rem;
+  }
+
+  .cta-section {
+    padding: 4rem 2rem;
+    margin: 0 -1.5rem;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .cta-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.7rem 1.8rem;
+  }
+}

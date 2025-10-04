@@ -1,0 +1,354 @@
+.book-now {
+  padding-top: 120px;
+  min-height: 100vh;
+  position: relative;
+}
+
+.booking-content {
+  padding: 6rem 0 0 0;
+  background: #ffffff;
+}
+
+.booking-content .container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 8rem;
+}
+
+.intro-section {
+  text-align: center;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+
+.intro-section h2 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2.9rem;
+  color: #2c2c2c;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+}
+
+.intro-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #8b7355, transparent);
+  margin: 0 auto 2rem auto;
+}
+
+.intro-section p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: #666;
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+.booking-form-wrapper {
+  background: transparent;
+  padding: 0;
+}
+
+.booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  padding: 1rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #8b7355;
+  box-shadow: 0 2px 8px rgba(139, 115, 85, 0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+  line-height: 1.7;
+}
+
+.submit-btn {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  background: linear-gradient(135deg, #8b7355, #a68968);
+  color: white;
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-top: 1.5rem;
+  align-self: center;
+  box-shadow: 0 4px 15px rgba(139, 115, 85, 0.3);
+}
+
+.submit-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 115, 85, 0.4);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 1.5rem;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #8b7355, #a68968);
+  border: none;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(139, 115, 85, 0.3);
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  z-index: 999;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.scroll-to-top:active {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(139, 115, 85, 0.4);
+}
+
+.scroll-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.success-message {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(44, 44, 44, 0.9), rgba(139, 115, 85, 0.9)),
+              url('../assets/Landing_page_background.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+}
+
+.success-content h1 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.success-content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 3rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.back-home-btn {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2c2c2c;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.back-home-btn:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .book-now {
+    padding-top: 80px;
+  }
+
+  .booking-content {
+    padding: 0 0 3rem 0;
+  }
+
+  .booking-content .container {
+    padding: 0 1.5rem;
+  }
+
+  .intro-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .intro-section h2 {
+    font-size: 2.5rem;
+    letter-spacing: -0.5px;
+  }
+
+  .intro-section p {
+    font-size: 1.15rem;
+    line-height: 1.7;
+  }
+
+  .booking-form-wrapper {
+    margin-bottom: 2rem;
+  }
+
+  .booking-form {
+    gap: 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1.05rem;
+    padding: 0.9rem 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .success-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .success-content p {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-content .container {
+    padding: 0 1rem;
+  }
+
+  .intro-section {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .intro-section h2 {
+    font-size: 2rem;
+  }
+
+  .intro-section p {
+    font-size: 1.05rem;
+  }
+
+  .booking-form {
+    gap: 1.5rem;
+  }
+
+  .form-row {
+    gap: 1.5rem;
+  }
+
+  .form-group label {
+    font-size: 1.05rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .submit-btn {
+    font-size: 1.05rem;
+    padding: 0.9rem 2.25rem;
+  }
+
+  .scroll-to-top {
+    width: 45px;
+    height: 45px;
+    bottom: 1.5rem;
+    right: 1rem;
+  }
+
+  .scroll-to-top svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .success-content h1 {
+    font-size: 2rem;
+  }
+
+  .success-content p {
+    font-size: 1.05rem;
+  }
+}

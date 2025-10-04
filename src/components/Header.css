@@ -1,0 +1,205 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  padding: 3rem 0 1rem 0;
+}
+
+.header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  margin-left: 0;
+}
+
+/* Home page styling (white text) */
+.header-home .logo a {
+  font-family: 'Aboreto', sans-serif;
+  font-size: 1.95rem;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  text-shadow: none;
+  transform: scaleY(0.9);
+  display: inline-block;
+}
+
+/* Other pages styling (black text) */
+.header-other .logo a {
+  font-family: 'Aboreto', sans-serif;
+  font-size: 1.95rem;
+  font-weight: 600;
+  color: #2c2c2c;
+  text-decoration: none;
+  letter-spacing: 0.3rem;
+  text-shadow: none;
+  transform: scaleY(0.9);
+  display: inline-block;
+}
+
+.nav {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+  margin-right: 0;
+}
+
+/* Home page navigation (white text) */
+.header-home .nav a {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.header-home .nav a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Other pages navigation (black text) */
+.header-other .nav a {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  color: #2c2c2c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  font-weight: 400;
+  text-shadow: none;
+}
+
+.header-other .nav a:hover {
+  color: #8b7355;
+}
+
+/* Home page Book Now button (dark background with gold hover) */
+.header-home .book-now-btn {
+  background: #2c2c2c !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 25px !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #2c2c2c !important;
+}
+
+.header-home .book-now-btn:hover {
+  background: #8b7355 !important;
+  transform: translateY(-2px);
+}
+
+/* Other pages Book Now button (black background, white text) */
+.header-other .book-now-btn {
+  background: #2c2c2c !important;
+  color: white !important;
+  padding: 0.75rem 2rem !important;
+  border-radius: 25px !important;
+  transition: all 0.3s ease !important;
+  border: 1px solid #2c2c2c !important;
+}
+
+.header-other .book-now-btn:hover {
+  background: #8b7355 !important;
+  transform: translateY(-2px);
+}
+
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* Home page menu toggle (white) */
+.header-home .menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin: 3px 0;
+  transition: 0.3s;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Other pages menu toggle (black) */
+.header-other .menu-toggle span {
+  width: 25px;
+  height: 2px;
+  background: #2c2c2c;
+  margin: 3px 0;
+  transition: 0.3s;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top: 1rem;
+  }
+
+  .header .container {
+    padding: 0 1.5rem;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .nav {
+    margin-right: 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+    transform: translateY(-150%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    border-radius: 0 0 20px 20px;
+  }
+
+  .nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .header-home .logo a,
+  .header-other .logo a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .container {
+    padding: 0 1rem;
+  }
+
+  .header-home .logo a,
+  .header-other .logo a {
+    font-size: 1.2rem;
+  }
+}
