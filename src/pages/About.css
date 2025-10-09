@@ -414,16 +414,16 @@
   }
 
   .partner-logo {
-    height: 70px;
-    max-width: 200px;
+    height: 105px;
+    max-width: 300px;
   }
 
   .partner-logo[alt="Wells Fargo"] {
-    height: 67px;
+    height: 100.5px;
   }
 
   .partner-logo[alt="FIS"] {
-    height: 50px;
+    height: 75px;
   }
 
   .principles-section {

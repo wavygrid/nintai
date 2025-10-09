@@ -10,11 +10,13 @@ const Footer: React.FC = () => {
           <p className="footer-brand">NINTAI & PARTNERS</p>
           <p className="footer-tagline">Building Global Success Through Partnership</p>
           <div className="footer-locations">
-            <span>London, United Kingdom</span>
+            <span className="footer-location-primary">London</span>
             <span className="footer-location-separator">•</span>
-            <span>Berlin, Germany</span>
+            <span>Berlin</span>
             <span className="footer-location-separator">•</span>
-            <span>Colombo, Sri Lanka</span>
+            <span>Colombo</span>
+            <span className="footer-location-separator">•</span>
+            <span>Toronto</span>
           </div>
         </div>
 

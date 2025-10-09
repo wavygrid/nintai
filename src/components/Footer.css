@@ -120,6 +120,11 @@
     white-space: nowrap;
   }
 
+  .footer-location-primary {
+    color: #8b7355;
+    font-weight: 600;
+  }
+
   .footer-location-separator {
     color: #8b7355;
     font-size: 0.7rem;
