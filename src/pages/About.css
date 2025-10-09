@@ -156,42 +156,26 @@
   background: white;
 }
 
-.philosophy-content {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 8rem;
-  align-items: start;
-}
-
-.quote-container {
-  position: relative;
-  padding: 3rem;
+.philosophy-quote-block {
+  max-width: 900px;
+  margin: 0 auto 4rem auto;
+  padding: 4rem;
   background: #fafafa;
-  border-radius: 8px;
-  margin-top: 8rem;
-  min-height: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  text-align: center;
 }
 
-.quote-container::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, #8b7355, #c4a882);
+.quote-content {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .japanese-quote {
   font-family: 'Noto Serif JP', serif;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #2c2c2c;
   margin-bottom: 1.5rem;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 400;
+  line-height: 1.6;
 }
 
 .quote-translation {
@@ -203,25 +187,21 @@
   margin: 0;
 }
 
-.philosophy-description {
-  display: flex;
-  flex-direction: column;
+.philosophy-content {
+  max-width: 900px;
+  margin: 0 auto;
 }
 
-.philosophy-description .section-intro {
-  margin-bottom: 3rem;
-  text-align: left;
-}
-
-.philosophy-description p {
+.philosophy-content p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.43rem;
-  line-height: 2;
+  font-size: 1.265rem;
+  line-height: 1.9;
   color: #666;
   margin-bottom: 2rem;
+  font-weight: 400;
 }
 
-.philosophy-description p:last-child {
+.philosophy-content p:last-child {
   margin-bottom: 0;
 }
 
@@ -230,43 +210,21 @@
   background: white;
 }
 
-.expertise-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 8rem;
-  align-items: start;
-}
-
-.partner-logos {
+.expertise-logos-bar {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
-  padding: 3rem;
+  gap: 6rem;
+  padding: 4rem;
   background: #fafafa;
-  border-radius: 8px;
-  margin-top: 8rem;
-  position: relative;
-  flex-wrap: nowrap;
-  min-height: 140px;
-}
-
-.partner-logos::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: linear-gradient(to bottom, #8b7355, #c4a882);
+  margin: 0 auto 4rem auto;
+  max-width: 1000px;
 }
 
 .partner-logo {
   height: 90px;
   width: auto;
-  max-width: 280px;
-  flex-shrink: 1;
+  max-width: 220px;
   object-fit: contain;
   filter: grayscale(100%) opacity(0.45);
   transition: all 0.4s ease;
@@ -280,31 +238,27 @@
   height: 60px;
 }
 
-.expertise-column {
-  display: flex;
-  flex-direction: column;
-}
-
-.expertise-column .section-intro {
-  margin-bottom: 3rem;
-  text-align: left;
-}
-
-.expertise-column p {
-  font-family: 'Crimson Text', serif;
-  font-size: 1.43rem;
-  line-height: 2;
-  color: #666;
-  margin-bottom: 2rem;
-}
-
-.expertise-column p:last-child {
-  margin-bottom: 0;
-}
-
 .partner-logo:hover {
   filter: grayscale(0%) opacity(1);
-  transform: scale(1.1);
+  transform: scale(1.05);
+}
+
+.expertise-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.expertise-content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.265rem;
+  line-height: 1.9;
+  color: #666;
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.expertise-content p:last-child {
+  margin-bottom: 0;
 }
 
 .principles-section {
@@ -449,22 +403,27 @@
     font-size: 1.43rem;
   }
 
-  .partner-logos {
+  .philosophy-quote-block {
+    padding: 3rem 2rem;
+  }
+
+  .expertise-logos-bar {
     gap: 2rem;
-    margin-top: 2rem;
+    padding: 3rem 2rem;
+    flex-wrap: wrap;
   }
 
   .partner-logo {
-    height: 80px;
-    max-width: 260px;
+    height: 70px;
+    max-width: 200px;
   }
 
   .partner-logo[alt="Wells Fargo"] {
-    height: 76.8px;
+    height: 67px;
   }
 
   .partner-logo[alt="FIS"] {
-    height: 60px;
+    height: 50px;
   }
 
   .principles-section {

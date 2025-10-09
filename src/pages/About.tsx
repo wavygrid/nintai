@@ -42,56 +42,58 @@ const About: React.FC = () => {
 
           <div id="philosophy-section" className="philosophy-section">
             <div className="content-wrapper">
-              <div className="philosophy-content">
-                <div className="quote-container">
+              <div className="section-intro centered">
+                <h3>Our Philosophy</h3>
+                <p className="section-description">
+                  The name "Nintai" embodies the Japanese concept of endurance and perseverance.
+                </p>
+              </div>
+
+              <div className="philosophy-quote-block">
+                <div className="quote-content">
                   <p className="japanese-quote">忍耐は苦いが、その実はより甘い</p>
                   <p className="quote-translation">"Patience is bitter, but its fruit is sweeter"</p>
                 </div>
-                <div className="philosophy-description">
-                  <div className="section-intro">
-                    <h3>Our Philosophy</h3>
-                    <p className="section-description">
-                      The name "Nintai" embodies the Japanese concept of endurance and perseverance.
-                    </p>
-                  </div>
-                  <p>
-                    This philosophy guides everything we do, ensuring that we stand by our clients through every challenge
-                    and celebrate every milestone achieved together.
-                  </p>
-                  <p>
-                    We exist to bridge the gap between ambitious businesses and their global aspirations, providing expert branding
-                    and market access solutions that not only open doors but create lasting competitive advantages in new markets worldwide.
-                  </p>
-                </div>
+              </div>
+
+              <div className="philosophy-content">
+                <p>
+                  This philosophy guides everything we do, ensuring that we stand by our clients through every challenge
+                  and celebrate every milestone achieved together.
+                </p>
+                <p>
+                  We exist to bridge the gap between ambitious businesses and their global aspirations, providing expert branding
+                  and market access solutions that not only open doors but create lasting competitive advantages in new markets worldwide.
+                </p>
               </div>
             </div>
           </div>
 
           <div className="experience-section">
             <div className="content-wrapper">
-              <div className="expertise-grid">
-                <div className="partner-logos">
-                  <img src="/logos/thomson-reuters.jpg" alt="Thomson Reuters" className="partner-logo" />
-                  <img src="/logos/wells-fargo.webp" alt="Wells Fargo" className="partner-logo" />
-                  <img src="/logos/fis.png" alt="FIS" className="partner-logo" />
-                </div>
-                <div className="expertise-column">
-                  <div className="section-intro">
-                    <h3>Our Expertise</h3>
-                    <p className="section-description">
-                      Extensive experience from leading global organizations.
-                    </p>
-                  </div>
-                  <p>
-                    Our partners bring deep expertise in navigating complex international markets and building sustainable
-                    competitive advantages across diverse industries.
-                  </p>
-                  <p>
-                    With a proven track record of consulting for Fortune 500 companies across technology, healthcare, manufacturing,
-                    and consumer goods sectors, we bring strategic insights and operational excellence to every engagement, ensuring
-                    measurable results and lasting transformation.
-                  </p>
-                </div>
+              <div className="section-intro centered">
+                <h3>Our Expertise</h3>
+                <p className="section-description">
+                  Extensive experience from leading global organizations.
+                </p>
+              </div>
+
+              <div className="expertise-logos-bar">
+                <img src="/logos/thomson-reuters.jpg" alt="Thomson Reuters" className="partner-logo" />
+                <img src="/logos/wells-fargo.webp" alt="Wells Fargo" className="partner-logo" />
+                <img src="/logos/fis.png" alt="FIS" className="partner-logo" />
+              </div>
+
+              <div className="expertise-content">
+                <p>
+                  Our partners bring deep expertise in navigating complex international markets and building sustainable
+                  competitive advantages across diverse industries.
+                </p>
+                <p>
+                  With a proven track record of consulting for Fortune 500 companies across technology, healthcare, manufacturing,
+                  and consumer goods sectors, we bring strategic insights and operational excellence to every engagement, ensuring
+                  measurable results and lasting transformation.
+                </p>
               </div>
             </div>
           </div>
