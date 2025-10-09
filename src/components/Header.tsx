@@ -38,7 +38,7 @@ const Header: React.FC = () => {
     <header className={`header ${isHomePage ? 'header-home' : 'header-other'}`}>
       <div className="container">
         <div className="logo">
-          <Link to="/">NINTAI&PARTNERS</Link>
+          <Link to="/">NINTAI & PARTNERS</Link>
         </div>
 
         <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>

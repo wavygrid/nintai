@@ -29,6 +29,7 @@
   color: white;
   text-decoration: none;
   letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
   text-shadow: none;
   transform: scaleY(0.9);
   display: inline-block;
@@ -42,6 +43,7 @@
   color: #2c2c2c;
   text-decoration: none;
   letter-spacing: 0.3rem;
+  word-spacing: 0.5rem;
   text-shadow: none;
   transform: scaleY(0.9);
   display: inline-block;
