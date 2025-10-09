@@ -263,6 +263,14 @@
   transition: all 0.4s ease;
 }
 
+.mobile-brand-logo[alt="Wells Fargo"] {
+  height: 28px;
+}
+
+.mobile-brand-logo[alt="FIS"] {
+  height: 24px;
+}
+
 .mobile-brand-logo:active {
   filter: grayscale(0%) opacity(0.85);
   transform: scale(1.05);

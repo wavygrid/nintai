@@ -70,8 +70,8 @@ const About: React.FC = () => {
               <div className="expertise-grid">
                 <div className="partner-logos">
                   <img src="/logos/thomson-reuters.jpg" alt="Thomson Reuters" className="partner-logo" />
-                  <img src="/logos/ifs.png" alt="IFS" className="partner-logo" />
-                  <img src="/logos/opentext.png" alt="OpenText" className="partner-logo" />
+                  <img src="/logos/wells-fargo.webp" alt="Wells Fargo" className="partner-logo" />
+                  <img src="/logos/fis.png" alt="FIS" className="partner-logo" />
                 </div>
                 <div className="expertise-column">
                   <div className="section-intro">

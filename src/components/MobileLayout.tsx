@@ -158,8 +158,8 @@ const MobileLayout: React.FC = () => {
               </p>
               <div className="mobile-logo-showcase">
                 <img src="/logos/thomson-reuters.jpg" alt="Thomson Reuters" className="mobile-brand-logo" />
-                <img src="/logos/ifs.png" alt="IFS" className="mobile-brand-logo" />
-                <img src="/logos/opentext.png" alt="OpenText" className="mobile-brand-logo" />
+                <img src="/logos/wells-fargo.webp" alt="Wells Fargo" className="mobile-brand-logo" />
+                <img src="/logos/fis.png" alt="FIS" className="mobile-brand-logo" />
               </div>
               <p className="mobile-expertise-description">
                 Proven track record of consulting for Fortune 500 companies, delivering strategic insights

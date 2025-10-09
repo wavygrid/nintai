@@ -272,6 +272,14 @@
   transition: all 0.4s ease;
 }
 
+.partner-logo[alt="Wells Fargo"] {
+  height: 35px;
+}
+
+.partner-logo[alt="FIS"] {
+  height: 30px;
+}
+
 .expertise-column {
   display: flex;
   flex-direction: column;
