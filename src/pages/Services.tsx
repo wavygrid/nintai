@@ -203,124 +203,88 @@ const Services: React.FC = () => {
             </div>
           </div>
 
-          <div className="comprehensive-section">
+          {/* Core Services */}
+          <div className="core-services-section">
             <div className="content-wrapper">
-              {/* How We Work - Horizontal Flow */}
-              <div className="methodology-block">
-                <div className="section-header">
-                  <h3>How We Work</h3>
-                  <p className="header-description">
-                    A structured approach delivering measurable results at every stage.
-                  </p>
+              <h3>Core Services</h3>
+
+              <div className="services-table">
+                <div className="services-table-header">
+                  <span className="header-service">Service</span>
+                  <span className="header-description">What We Deliver</span>
                 </div>
-                <div className="methodology-flow">
-                  <div className="flow-step">
-                    <span className="flow-number">01</span>
-                    <div className="flow-content">
-                      <h4>Discovery</h4>
-                      <p>Deep dive into your business objectives and market opportunities.</p>
-                    </div>
+
+                <div className="services-table-row">
+                  <div className="row-service">Market Entry & Expansion Strategy</div>
+                  <div className="row-description">
+                    Deep market assessments covering regulatory requirements, competitive dynamics, and distribution infrastructure.
+                    Our analysis identifies viable entry paths, quantifies market opportunity, and maps partner ecosystems. Deliverables
+                    include regulatory compliance roadmaps, competitive positioning frameworks, and go-to-market sequencing recommendations
+                    with risk mitigation strategies.
                   </div>
-                  <div className="flow-arrow">
-                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 12H58M58 12L48 2M58 12L48 22" stroke="#8b7355" strokeWidth="1.5" opacity="0.3"/>
-                    </svg>
+                </div>
+
+                <div className="services-table-row">
+                  <div className="row-service">Partnership & Channel Development</div>
+                  <div className="row-description">
+                    From distributor identification to contract negotiation, we manage the full partner lifecycle. Our work includes
+                    partner vetting with due diligence, agreement structuring, onboarding coordination, and performance management.
+                    We bring existing networks across EU, UK, Nordic, and Asian markets while building new relationships specific
+                    to your sector and growth objectives.
                   </div>
-                  <div className="flow-step">
-                    <span className="flow-number">02</span>
-                    <div className="flow-content">
-                      <h4>Strategy</h4>
-                      <p>Tailored roadmaps with clear milestones and risk mitigation.</p>
-                    </div>
+                </div>
+
+                <div className="services-table-row">
+                  <div className="row-service">Brand & Market Positioning</div>
+                  <div className="row-description">
+                    Cultural adaptation goes beyond translation. We develop market-specific messaging frameworks, value proposition
+                    refinement, and positioning strategies that resonate locally. This includes competitive differentiation analysis,
+                    pricing strategy localization, and brand architecture decisions for international portfolios.
                   </div>
-                  <div className="flow-arrow">
-                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 12H58M58 12L48 2M58 12L48 22" stroke="#8b7355" strokeWidth="1.5" opacity="0.3"/>
-                    </svg>
-                  </div>
-                  <div className="flow-step">
-                    <span className="flow-number">03</span>
-                    <div className="flow-content">
-                      <h4>Implementation</h4>
-                      <p>Execute strategies managing partnerships and compliance.</p>
-                    </div>
-                  </div>
-                  <div className="flow-arrow">
-                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 12H58M58 12L48 2M58 12L48 22" stroke="#8b7355" strokeWidth="1.5" opacity="0.3"/>
-                    </svg>
-                  </div>
-                  <div className="flow-step">
-                    <span className="flow-number">04</span>
-                    <div className="flow-content">
-                      <h4>Growth</h4>
-                      <p>Continuous refinement adapting to evolving markets.</p>
-                    </div>
+                </div>
+
+                <div className="services-table-row">
+                  <div className="row-service">Regulatory & Compliance Navigation</div>
+                  <div className="row-description">
+                    Complex regulatory environments require local expertise. We guide entity structuring decisions, manage licensing
+                    and certification processes, and ensure compliance with data protection, tax, and industry-specific regulations.
+                    Our support includes ongoing monitoring of regulatory changes affecting your market operations.
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              {/* Services & Who We Serve - Asymmetric Layout */}
-              <div className="services-audience-block">
-                <div className="primary-services">
-                  <h3>Our Services</h3>
-                  <div className="services-list">
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Global Market Entry</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Comprehensive market analysis, regulatory navigation, and strategic planning to ensure successful entry into new territories.</p>
-                      </div>
-                    </div>
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Brand Strategy & Positioning</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Cultural adaptation and brand development that resonates with local markets while maintaining your core identity.</p>
-                      </div>
-                    </div>
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Partnership Development</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Strategic partner identification, vetting, and relationship management to accelerate market penetration.</p>
-                      </div>
-                    </div>
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Regulatory & Compliance</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Expert guidance through complex international regulations ensuring full compliance and operational confidence.</p>
-                      </div>
-                    </div>
-                  </div>
+          {/* Who Benefits Most */}
+          <div className="benefits-section">
+            <div className="content-wrapper">
+              <div className="benefits-layout">
+                <div className="benefits-intro">
+                  <h3>Who Benefits Most</h3>
+                  <p>
+                    Our clients are typically mid-market to enterprise organizations with proven domestic success,
+                    seeking disciplined international expansion. Common characteristics include revenue between $10M-$500M,
+                    established product-market fit, and senior leadership commitment to multi-year market development.
+                  </p>
                 </div>
 
-                <div className="audience-sidebar">
-                  <div className="audience-content">
-                    <h3>Who We Serve</h3>
-                    <div className="audience-list">
-                      <div className="audience-item">
-                        <h4>Technology & SaaS</h4>
-                        <p>Software companies scaling across borders and building strategic partnerships.</p>
-                      </div>
-                      <div className="audience-item">
-                        <h4>Manufacturing</h4>
-                        <p>Established manufacturers pursuing international expansion and optimization.</p>
-                      </div>
-                      <div className="audience-item">
-                        <h4>Professional Services</h4>
-                        <p>Firms establishing credibility in cross-border markets.</p>
-                      </div>
-                      <div className="audience-item">
-                        <h4>Growth-Stage Enterprises</h4>
-                        <p>Companies with $10M+ revenue seeking sustainable international growth.</p>
-                      </div>
-                    </div>
+                <div className="benefits-scenarios">
+                  <div className="scenario-card">
+                    <div className="scenario-tag">B2B SaaS</div>
+                    <h4>European Expansion for US Software Company</h4>
+                    <p>Navigating GDPR compliance, VAT structures, and local cloud infrastructure requirements while building reseller networks across UK, DACH, and Nordic regions.</p>
+                  </div>
+
+                  <div className="scenario-card">
+                    <div className="scenario-tag">Manufacturing</div>
+                    <h4>Asian Market Entry for Industrial Equipment</h4>
+                    <p>Establishing distributor relationships, managing certification requirements across multiple countries, and adapting sales models for relationship-driven markets.</p>
+                  </div>
+
+                  <div className="scenario-card">
+                    <div className="scenario-tag">Consulting</div>
+                    <h4>Global Credentials for Advisory Firm</h4>
+                    <p>Building thought leadership presence, establishing local partnerships with accounting and legal firms, and positioning for multinational RFPs requiring global delivery capability.</p>
                   </div>
                 </div>
               </div>

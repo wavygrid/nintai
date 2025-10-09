@@ -104,37 +104,41 @@ const About: React.FC = () => {
                   Four core principles that define our approach to every partnership.
                 </p>
               </div>
-              <div className="principles-list">
-                <div className="principle-row">
-                  <div className="principle-title">
-                    <h4>Global Expertise</h4>
-                  </div>
-                  <div className="principle-description">
-                    <p>Deep understanding of international markets, regulations, and cultural nuances across multiple industries.</p>
+              <div className="principles-table">
+                <div className="principles-table-header">
+                  <span className="header-principle">Principle</span>
+                  <span className="header-approach">Our Approach</span>
+                </div>
+
+                <div className="principles-table-row">
+                  <div className="row-principle">Global Expertise</div>
+                  <div className="row-approach">
+                    Deep understanding of international markets, regulations, and cultural nuances across multiple industries.
+                    We bring local market knowledge combined with global strategic thinking to every engagement.
                   </div>
                 </div>
-                <div className="principle-row">
-                  <div className="principle-title">
-                    <h4>Partnership Approach</h4>
-                  </div>
-                  <div className="principle-description">
-                    <p>We don't just consult—we become an extension of your team, invested in your long-term success.</p>
-                  </div>
-                </div>
-                <div className="principle-row">
-                  <div className="principle-title">
-                    <h4>Sustainable Growth</h4>
-                  </div>
-                  <div className="principle-description">
-                    <p>Building strategies that create lasting value and competitive advantages for years to come.</p>
+
+                <div className="principles-table-row">
+                  <div className="row-principle">Partnership Approach</div>
+                  <div className="row-approach">
+                    We become an extension of your team, invested in your long-term success. Our collaborative model ensures
+                    alignment with your vision throughout the journey.
                   </div>
                 </div>
-                <div className="principle-row">
-                  <div className="principle-title">
-                    <h4>Cultural Intelligence</h4>
+
+                <div className="principles-table-row">
+                  <div className="row-principle">Cultural Intelligence</div>
+                  <div className="row-approach">
+                    Navigating the complexities of global business with sensitivity and insight. We bridge cultural divides
+                    to create authentic connections in every market.
                   </div>
-                  <div className="principle-description">
-                    <p>Navigating the complexities of global business with cultural sensitivity and local market knowledge.</p>
+                </div>
+
+                <div className="principles-table-row">
+                  <div className="row-principle">Sustainable Growth</div>
+                  <div className="row-approach">
+                    Building strategies that create lasting value and competitive advantages. We focus on long-term success
+                    rather than short-term wins, ensuring your growth endures.
                   </div>
                 </div>
               </div>

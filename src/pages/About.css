@@ -33,7 +33,7 @@
 
 .hero-intro p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.3rem;
+  font-size: 1.56rem;
   line-height: 1.9;
   color: #8b7355;
   font-weight: 600;
@@ -111,7 +111,7 @@
 
 .office-city {
   font-family: 'Crimson Text', serif;
-  font-size: 1.2rem;
+  font-size: 1.44rem;
   color: #666;
   font-weight: 600;
 }
@@ -196,7 +196,7 @@
 
 .quote-translation {
   font-family: 'Crimson Text', serif;
-  font-size: 1.3rem;
+  font-size: 1.56rem;
   color: #8b7355;
   font-style: italic;
   font-weight: 600;
@@ -215,7 +215,7 @@
 
 .philosophy-description p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.3rem;
+  font-size: 1.56rem;
   line-height: 2;
   color: #666;
   margin-bottom: 2rem;
@@ -292,7 +292,7 @@
 
 .expertise-column p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.3rem;
+  font-size: 1.56rem;
   line-height: 2;
   color: #666;
   margin-bottom: 2rem;
@@ -312,40 +312,55 @@
   background: white;
 }
 
-.principles-list {
+.principles-table {
   display: flex;
   flex-direction: column;
-  gap: 0;
 }
 
-.principle-row {
+.principles-table-header {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 6rem;
-  padding: 4rem 0;
+  gap: 3rem;
+  padding: 1.5rem 2rem;
+  background: #2c2c2c;
+  border-bottom: 3px solid #8b7355;
+}
+
+.principles-table-header span {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+}
+
+.principles-table-row {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  padding: 2.5rem 2rem;
   border-bottom: 1px solid #e8e8e8;
   align-items: start;
 }
 
-.principle-row:last-child {
+.principles-table-row:last-child {
   border-bottom: none;
 }
 
-.principle-title h4 {
+.row-principle {
   font-family: 'Faculty Glyphic', sans-serif;
-  font-size: 2.2rem;
+  font-size: 1.6rem;
   color: #2c2c2c;
   font-weight: 400;
   line-height: 1.3;
-  margin: 0;
 }
 
-.principle-description p {
+.row-approach {
   font-family: 'Crimson Text', serif;
-  font-size: 1.3rem;
-  line-height: 2;
+  font-size: 1.38rem;
+  line-height: 1.8;
   color: #666;
-  margin: 0;
 }
 
 .cta-section {
@@ -367,7 +382,7 @@
 
 .cta-section p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.3rem;
+  font-size: 1.56rem;
   line-height: 1.8;
   color: #666;
   margin-bottom: 3rem;
@@ -378,7 +393,7 @@
 
 .cta-button {
   font-family: 'Crimson Text', serif;
-  font-size: 1.1rem;
+  font-size: 1.32rem;
   background: #2c2c2c;
   color: white;
   border: 1px solid #2c2c2c;
@@ -408,7 +423,7 @@
   }
 
   .hero-intro p {
-    font-size: 1.3rem;
+    font-size: 1.56rem;
   }
 
   .story-section {
@@ -431,7 +446,7 @@
   }
 
   .story-item p {
-    font-size: 1.3rem;
+    font-size: 1.56rem;
   }
 
   .partner-logos {
@@ -463,11 +478,11 @@
   }
 
   .principle-card h4 {
-    font-size: 1.3rem;
+    font-size: 1.56rem;
   }
 
   .principle-card p {
-    font-size: 1.3rem;
+    font-size: 1.56rem;
   }
 
   .cta-section {
