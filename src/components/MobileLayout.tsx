@@ -5,13 +5,8 @@ import Footer from './Footer';
 import './MobileLayout.css';
 
 const MobileLayout: React.FC = () => {
-  const [openServiceIndex, setOpenServiceIndex] = useState<number | null>(null);
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [currentPackageIndex, setCurrentPackageIndex] = useState(1); // Start with "Most Popular" (index 1)
-
-  const toggleService = (index: number) => {
-    setOpenServiceIndex(openServiceIndex === index ? null : index);
-  };
 
   const packages = [
     {
