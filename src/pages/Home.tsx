@@ -5,18 +5,23 @@ import { useScreenSize } from '../hooks/useScreenSize';
 
 const Home: React.FC = () => {
   const { isMobile } = useScreenSize();
+  const [imageLoaded, setImageLoaded] = React.useState(false);
 
-  // Preload background image
+  // Progressive image loading
   React.useEffect(() => {
-    const img = new Image();
-    img.src = require('../assets/Landing_page_background.webp');
-
     // Add WebP support detection
     const webpTest = document.createElement('canvas');
     const hasWebP = webpTest.toDataURL('image/webp').indexOf('data:image/webp') === 0;
     if (!hasWebP) {
       document.documentElement.classList.add('no-webp');
     }
+
+    // Preload full-quality image
+    const img = new Image();
+    img.src = require('../assets/Landing_page_background.webp');
+    img.onload = () => {
+      setImageLoaded(true);
+    };
   }, []);
 
   const handleLearnMore = (e: React.MouseEvent) => {
@@ -32,7 +37,7 @@ const Home: React.FC = () => {
   return (
     <div className="home">
       <div className="hero-section">
-        <div className="hero-background"></div>
+        <div className={`hero-background ${imageLoaded ? 'loaded' : ''}`}></div>
         <div className="hero-content">
           <div className="container">
             <h1>Expert Branding and Market Access Solutions for Your Business</h1>
