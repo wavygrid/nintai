@@ -177,11 +177,32 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(44, 44, 44, 0.9), rgba(139, 115, 85, 0.9)),
-              url('../assets/Landing_page_background.png');
+              url('../assets/Landing_page_background_placeholder.webp');
   background-size: cover;
   background-position: center;
   color: white;
   text-align: center;
+  filter: blur(20px);
+  transform: scale(1.1);
+  transition: filter 0.5s ease-out, transform 0.5s ease-out, background-image 0.5s ease-out;
+}
+
+/* Full quality image loads when ready */
+.success-message.loaded {
+  background: linear-gradient(135deg, rgba(44, 44, 44, 0.9), rgba(139, 115, 85, 0.9)),
+              url('../assets/Landing_page_background.webp');
+  background-size: cover;
+  background-position: center;
+  filter: blur(0);
+  transform: scale(1);
+}
+
+/* Fallback for browsers that don't support WebP */
+.no-webp .success-message.loaded {
+  background: linear-gradient(135deg, rgba(44, 44, 44, 0.9), rgba(139, 115, 85, 0.9)),
+              url('../assets/Landing_page_background.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .success-content h1 {

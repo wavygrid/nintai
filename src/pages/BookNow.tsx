@@ -17,6 +17,7 @@ const BookNow: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [successImageLoaded, setSuccessImageLoaded] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -66,10 +67,21 @@ const BookNow: React.FC = () => {
     }
   };
 
+  // Preload success page background image
+  useEffect(() => {
+    if (isSubmitted) {
+      const img = new Image();
+      img.src = require('../assets/Landing_page_background.webp');
+      img.onload = () => {
+        setSuccessImageLoaded(true);
+      };
+    }
+  }, [isSubmitted]);
+
   if (isSubmitted) {
     return (
       <div className="book-now">
-        <div className="success-message">
+        <div className={`success-message ${successImageLoaded ? 'loaded' : ''}`}>
           <div className="container">
             <div className="success-content">
               <h1>Thank You!</h1>
