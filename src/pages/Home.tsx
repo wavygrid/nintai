@@ -6,6 +6,19 @@ import { useScreenSize } from '../hooks/useScreenSize';
 const Home: React.FC = () => {
   const { isMobile } = useScreenSize();
 
+  // Preload background image
+  React.useEffect(() => {
+    const img = new Image();
+    img.src = require('../assets/Landing_page_background.webp');
+
+    // Add WebP support detection
+    const webpTest = document.createElement('canvas');
+    const hasWebP = webpTest.toDataURL('image/webp').indexOf('data:image/webp') === 0;
+    if (!hasWebP) {
+      document.documentElement.classList.add('no-webp');
+    }
+  }, []);
+
   const handleLearnMore = (e: React.MouseEvent) => {
     if (isMobile) {
       e.preventDefault();
