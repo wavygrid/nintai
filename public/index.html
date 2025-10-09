@@ -9,9 +9,37 @@
       name="description"
       content="Nintai & Partners - Expert Branding and Market Access Solutions for Your Business"
     />
+    <!-- Preconnect to Google Fonts for faster loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400&family=Crimson+Text:wght@400;600&family=Aboreto:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Load fonts with display=block to prevent FOUT -->
+    <link href="https://fonts.googleapis.com/css2?family=Faculty+Glyphic:wght@400&family=Crimson+Text:wght@400;600&family=Aboreto:wght@400;600&display=block" rel="stylesheet">
+
+    <!-- Inline critical font loading style to hide text until fonts load -->
+    <style>
+      /* Prevent flash of unstyled text */
+      html {
+        font-family: 'Crimson Text', serif;
+      }
+      body {
+        opacity: 0;
+        transition: opacity 0.1s ease-in;
+      }
+      body.fonts-loaded {
+        opacity: 1;
+      }
+    </style>
+    <script>
+      // Show content once fonts are loaded or after timeout
+      document.fonts.ready.then(function() {
+        document.body.classList.add('fonts-loaded');
+      });
+      // Fallback timeout to prevent indefinite hiding
+      setTimeout(function() {
+        document.body.classList.add('fonts-loaded');
+      }, 3000);
+    </script>
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
