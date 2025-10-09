@@ -21,9 +21,11 @@ const About: React.FC = () => {
               <div className="offices">
                 <span className="location-label">With global presence in</span>
                 <div className="office-locations">
-                  <span className="office-city">Berlin, Germany</span>
+                  <span className="office-city">Berlin</span>
                   <span className="office-separator">•</span>
-                  <span className="office-city">Colombo, Sri Lanka</span>
+                  <span className="office-city">Colombo</span>
+                  <span className="office-separator">•</span>
+                  <span className="office-city">Toronto</span>
                 </div>
               </div>
             </div>

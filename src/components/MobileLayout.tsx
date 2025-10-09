@@ -122,9 +122,11 @@ const MobileLayout: React.FC = () => {
               <div className="mobile-offices">
                 <span className="mobile-location-label">With global presence in</span>
                 <div className="mobile-office-locations">
-                  <span className="mobile-office-city">Berlin, Germany</span>
+                  <span className="mobile-office-city">Berlin</span>
                   <span className="mobile-office-separator">•</span>
-                  <span className="mobile-office-city">Colombo, Sri Lanka</span>
+                  <span className="mobile-office-city">Colombo</span>
+                  <span className="mobile-office-separator">•</span>
+                  <span className="mobile-office-city">Toronto</span>
                 </div>
               </div>
             </div>
