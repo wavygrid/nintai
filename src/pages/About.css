@@ -263,9 +263,9 @@
 }
 
 .partner-logo {
-  height: 45px;
+  height: 90px;
   width: auto;
-  max-width: 140px;
+  max-width: 280px;
   flex-shrink: 1;
   object-fit: contain;
   filter: grayscale(100%) opacity(0.45);
@@ -273,11 +273,11 @@
 }
 
 .partner-logo[alt="Wells Fargo"] {
-  height: 35px;
+  height: 84px;
 }
 
 .partner-logo[alt="FIS"] {
-  height: 30px;
+  height: 60px;
 }
 
 .expertise-column {
@@ -455,8 +455,16 @@
   }
 
   .partner-logo {
-    height: 40px;
-    max-width: 130px;
+    height: 80px;
+    max-width: 260px;
+  }
+
+  .partner-logo[alt="Wells Fargo"] {
+    height: 76.8px;
+  }
+
+  .partner-logo[alt="FIS"] {
+    height: 60px;
   }
 
   .principles-section {
