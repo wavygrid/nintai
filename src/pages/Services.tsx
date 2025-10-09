@@ -203,125 +203,118 @@ const Services: React.FC = () => {
             </div>
           </div>
 
-          <div className="comprehensive-section">
+          {/* Core Capabilities Section */}
+          <div className="capabilities-section">
             <div className="content-wrapper">
-              {/* How We Work - Horizontal Flow */}
-              <div className="methodology-block">
-                <div className="section-header">
-                  <h3>How We Work</h3>
-                  <p className="header-description">
-                    A structured approach delivering measurable results at every stage.
-                  </p>
+              <div className="section-intro centered">
+                <h3>Core Capabilities</h3>
+                <div className="section-divider"></div>
+                <p className="section-description">
+                  Comprehensive solutions designed to navigate the complexities of global market expansion.
+                </p>
+              </div>
+              <div className="capabilities-grid">
+                <div className="capability-card">
+                  <div className="capability-number">01</div>
+                  <h4>Global Market Entry</h4>
+                  <p>Strategic market analysis, regulatory navigation, and localized go-to-market strategies that ensure successful launches in new territories.</p>
                 </div>
-                <div className="methodology-flow">
-                  <div className="flow-step">
-                    <span className="flow-number">01</span>
-                    <div className="flow-content">
-                      <h4>Discovery</h4>
-                      <p>Deep dive into your business objectives and market opportunities.</p>
-                    </div>
+                <div className="capability-card">
+                  <div className="capability-number">02</div>
+                  <h4>Brand Strategy & Positioning</h4>
+                  <p>Cultural adaptation and brand development that resonates authentically with local markets while maintaining your core identity and values.</p>
+                </div>
+                <div className="capability-card">
+                  <div className="capability-number">03</div>
+                  <h4>Partnership Development</h4>
+                  <p>Strategic partner identification, due diligence, and relationship management to accelerate market penetration and operational excellence.</p>
+                </div>
+                <div className="capability-card">
+                  <div className="capability-number">04</div>
+                  <h4>Regulatory & Compliance</h4>
+                  <p>Expert guidance through complex international regulations, ensuring full compliance and providing operational confidence in unfamiliar markets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Methodology Section */}
+          <div className="methodology-section">
+            <div className="content-wrapper">
+              <div className="section-intro centered">
+                <h3>Our Methodology</h3>
+                <div className="section-divider"></div>
+                <p className="section-description">
+                  A partnership-driven approach that evolves with your business at every stage.
+                </p>
+              </div>
+              <div className="methodology-timeline">
+                <div className="timeline-item left">
+                  <div className="timeline-content">
+                    <div className="timeline-phase">Phase 01</div>
+                    <h4>Discovery & Analysis</h4>
+                    <p>We begin by deeply understanding your business objectives, competitive position, and growth aspirations. Through comprehensive market research and stakeholder interviews, we identify opportunities and potential challenges in your target markets.</p>
                   </div>
-                  <div className="flow-arrow">
-                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 12H58M58 12L48 2M58 12L48 22" stroke="#8b7355" strokeWidth="1.5" opacity="0.3"/>
-                    </svg>
+                  <div className="timeline-marker"></div>
+                </div>
+                <div className="timeline-item right">
+                  <div className="timeline-marker"></div>
+                  <div className="timeline-content">
+                    <div className="timeline-phase">Phase 02</div>
+                    <h4>Strategic Planning</h4>
+                    <p>Leveraging insights from discovery, we craft tailored roadmaps with clear milestones, resource allocation, and risk mitigation strategies. Our plans balance ambition with pragmatism, ensuring sustainable growth trajectories.</p>
                   </div>
-                  <div className="flow-step">
-                    <span className="flow-number">02</span>
-                    <div className="flow-content">
-                      <h4>Strategy</h4>
-                      <p>Tailored roadmaps with clear milestones and risk mitigation.</p>
-                    </div>
+                </div>
+                <div className="timeline-item left">
+                  <div className="timeline-content">
+                    <div className="timeline-phase">Phase 03</div>
+                    <h4>Execution & Launch</h4>
+                    <p>We partner with your team to execute strategies, manage partnerships, navigate regulatory requirements, and coordinate market entry activities. Our hands-on approach ensures nothing falls through the cracks during critical launch phases.</p>
                   </div>
-                  <div className="flow-arrow">
-                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 12H58M58 12L48 2M58 12L48 22" stroke="#8b7355" strokeWidth="1.5" opacity="0.3"/>
-                    </svg>
-                  </div>
-                  <div className="flow-step">
-                    <span className="flow-number">03</span>
-                    <div className="flow-content">
-                      <h4>Implementation</h4>
-                      <p>Execute strategies managing partnerships and compliance.</p>
-                    </div>
-                  </div>
-                  <div className="flow-arrow">
-                    <svg width="60" height="24" viewBox="0 0 60 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 12H58M58 12L48 2M58 12L48 22" stroke="#8b7355" strokeWidth="1.5" opacity="0.3"/>
-                    </svg>
-                  </div>
-                  <div className="flow-step">
-                    <span className="flow-number">04</span>
-                    <div className="flow-content">
-                      <h4>Growth</h4>
-                      <p>Continuous refinement adapting to evolving markets.</p>
-                    </div>
+                  <div className="timeline-marker"></div>
+                </div>
+                <div className="timeline-item right">
+                  <div className="timeline-marker"></div>
+                  <div className="timeline-content">
+                    <div className="timeline-phase">Phase 04</div>
+                    <h4>Partnership & Optimization</h4>
+                    <p>Success is ongoing. We remain invested in your growth, continuously monitoring performance, adapting strategies to evolving market conditions, and identifying new opportunities for expansion and optimization.</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
 
-              {/* Services & Who We Serve - Asymmetric Layout */}
-              <div className="services-audience-block">
-                <div className="primary-services">
-                  <h3>Our Services</h3>
-                  <div className="services-list">
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Global Market Entry</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Comprehensive market analysis, regulatory navigation, and strategic planning to ensure successful entry into new territories.</p>
-                      </div>
-                    </div>
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Brand Strategy & Positioning</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Cultural adaptation and brand development that resonates with local markets while maintaining your core identity.</p>
-                      </div>
-                    </div>
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Partnership Development</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Strategic partner identification, vetting, and relationship management to accelerate market penetration.</p>
-                      </div>
-                    </div>
-                    <div className="service-row">
-                      <div className="service-title">
-                        <h4>Regulatory & Compliance</h4>
-                      </div>
-                      <div className="service-description">
-                        <p>Expert guidance through complex international regulations ensuring full compliance and operational confidence.</p>
-                      </div>
-                    </div>
-                  </div>
+          {/* Client Results Section */}
+          <div className="results-section">
+            <div className="content-wrapper">
+              <div className="section-intro centered">
+                <h3>Client Results</h3>
+                <div className="section-divider"></div>
+                <p className="section-description">
+                  Measurable outcomes that demonstrate our commitment to your success.
+                </p>
+              </div>
+              <div className="results-grid">
+                <div className="result-item">
+                  <div className="result-value">127%</div>
+                  <div className="result-label">Average Revenue Growth</div>
+                  <p className="result-description">in new markets within first 18 months</p>
                 </div>
-
-                <div className="audience-sidebar">
-                  <div className="audience-content">
-                    <h3>Who We Serve</h3>
-                    <div className="audience-list">
-                      <div className="audience-item">
-                        <h4>Technology & SaaS</h4>
-                        <p>Software companies scaling across borders and building strategic partnerships.</p>
-                      </div>
-                      <div className="audience-item">
-                        <h4>Manufacturing</h4>
-                        <p>Established manufacturers pursuing international expansion and optimization.</p>
-                      </div>
-                      <div className="audience-item">
-                        <h4>Professional Services</h4>
-                        <p>Firms establishing credibility in cross-border markets.</p>
-                      </div>
-                      <div className="audience-item">
-                        <h4>Growth-Stage Enterprises</h4>
-                        <p>Companies with $10M+ revenue seeking sustainable international growth.</p>
-                      </div>
-                    </div>
-                  </div>
+                <div className="result-item">
+                  <div className="result-value">92%</div>
+                  <div className="result-label">Client Retention Rate</div>
+                  <p className="result-description">long-term partnerships built on trust</p>
+                </div>
+                <div className="result-item">
+                  <div className="result-value">18</div>
+                  <div className="result-label">Average Partnership Duration</div>
+                  <p className="result-description">months of continuous collaboration</p>
+                </div>
+                <div className="result-item">
+                  <div className="result-value">$50M+</div>
+                  <div className="result-label">Market Value Created</div>
+                  <p className="result-description">for clients entering new territories</p>
                 </div>
               </div>
             </div>
@@ -330,9 +323,10 @@ const Services: React.FC = () => {
           <div className="packages-section">
             <div className="content-wrapper">
               <div className="section-intro centered">
-                <h3>Service Packages</h3>
+                <h3>Engagement Models</h3>
+                <div className="section-divider"></div>
                 <p className="section-description">
-                  Flexible engagement models designed to meet you where you are.
+                  Flexible partnership structures designed to meet you where you are in your growth journey.
                 </p>
               </div>
               <div className="packages-grid">

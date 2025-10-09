@@ -252,6 +252,214 @@
   background: white;
 }
 
+/* ==================== NEW REDESIGNED SECTIONS ==================== */
+
+/* Section Divider */
+.section-divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #8b7355, transparent);
+  margin: 0 auto 2rem auto;
+}
+
+/* Core Capabilities Section */
+.capabilities-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.capabilities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.capability-card {
+  background: #fafafa;
+  padding: 3rem;
+  border-radius: 0;
+  border-left: 3px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.capability-card:hover {
+  border-left-color: #8b7355;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(139, 115, 85, 0.08);
+  transform: translateY(-4px);
+}
+
+.capability-number {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 3.5rem;
+  color: #8b7355;
+  opacity: 0.2;
+  line-height: 1;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+}
+
+.capability-card h4 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.capability-card p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: #666;
+  margin: 0;
+}
+
+/* Our Methodology Section */
+.methodology-section {
+  padding: 6rem 0;
+  background: #fafafa;
+}
+
+.methodology-timeline {
+  position: relative;
+  margin-top: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.methodology-timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #e8e8e8, #8b7355 50%, #e8e8e8);
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-item.left .timeline-content {
+  text-align: right;
+  padding-right: 0;
+}
+
+.timeline-item.right .timeline-content {
+  text-align: left;
+  padding-left: 0;
+  grid-column: 2;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: 50%;
+  top: 2rem;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 3px solid #8b7355;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-content {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 0;
+  position: relative;
+}
+
+.timeline-phase {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: #8b7355;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timeline-content h4 {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 2rem;
+  color: #2c2c2c;
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+  margin-top: 0;
+  line-height: 1.3;
+}
+
+.timeline-content p {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.3rem;
+  line-height: 1.9;
+  color: #666;
+  margin: 0;
+}
+
+/* Client Results Section */
+.results-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+
+.result-item {
+  text-align: center;
+  padding: 2rem 1.5rem;
+}
+
+.result-value {
+  font-family: 'Faculty Glyphic', sans-serif;
+  font-size: 4.5rem;
+  color: #8b7355;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.result-label {
+  font-family: 'Crimson Text', serif;
+  font-size: 0.95rem;
+  color: #2c2c2c;
+  text-transform: uppercase;
+  letter-spacing: 0.12rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.result-description {
+  font-family: 'Crimson Text', serif;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #999;
+  font-style: italic;
+  margin: 0;
+}
+
 /* Methodology Flow */
 .methodology-block {
   margin-bottom: 14rem;
