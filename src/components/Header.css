@@ -57,7 +57,7 @@
 /* Home page navigation (white text) */
 .header-home .nav a {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   color: white;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -72,7 +72,7 @@
 /* Other pages navigation (black text) */
 .header-other .nav a {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   color: #2c2c2c;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -189,7 +189,7 @@
 
   .header-home .logo a,
   .header-other .logo a {
-    font-size: 1.56rem;
+    font-size: 1.43rem;
   }
 }
 
@@ -200,6 +200,6 @@
 
   .header-home .logo a,
   .header-other .logo a {
-    font-size: 1.44rem;
+    font-size: 1.21rem;
   }
 }

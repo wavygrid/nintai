@@ -76,7 +76,7 @@
 
 .mobile-about-tagline {
   font-family: 'Crimson Text', serif;
-  font-size: 1.32rem;
+  font-size: 1.21rem;
   color: #8b7355;
   font-weight: 600;
   font-style: italic;
@@ -132,7 +132,7 @@
 
 .mobile-philosophy-text {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
@@ -235,7 +235,7 @@
 
 .mobile-expertise-subtitle {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   text-align: center;
@@ -278,7 +278,7 @@
 
 .mobile-expertise-description {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   text-align: center;
@@ -343,7 +343,7 @@
 
 .mobile-principle-card p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   margin: 0;
@@ -379,7 +379,7 @@
 
 .mobile-services-intro {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   color: #666;
   text-align: center;
   margin: 0 1.5rem 3rem 1.5rem;
@@ -471,7 +471,7 @@
 
 .mobile-accordion-content p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   margin: 0;
@@ -510,7 +510,7 @@
 
 .mobile-cta p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.38rem;
+  font-size: 1.265rem;
   line-height: 1.7;
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 2rem;
@@ -518,7 +518,7 @@
 
 .mobile-cta-button {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   background: linear-gradient(135deg, #8b7355, #a68968);
   color: white;
   border: none;
@@ -614,7 +614,7 @@
 
 .mobile-region-label {
   font-family: 'Crimson Text', serif;
-  font-size: 1.32rem;
+  font-size: 1.21rem;
   color: #2c2c2c;
   font-weight: 600;
   text-align: center;
@@ -637,7 +637,7 @@
 
 .mobile-methodology-subtitle {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   color: #8b7355;
   font-style: italic;
   text-align: center;
@@ -675,7 +675,7 @@
 
 .mobile-step p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   margin: 0;
@@ -715,7 +715,7 @@
 
 .mobile-service-item p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   margin: 0;
@@ -750,7 +750,7 @@
 
 .mobile-audience-item h4 {
   font-family: 'Faculty Glyphic', sans-serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   color: #2c2c2c;
   font-weight: 400;
   margin-bottom: 0.5rem;
@@ -782,7 +782,7 @@
 
 .mobile-packages-subtitle {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   color: #8b7355;
   font-style: italic;
   text-align: center;
@@ -855,7 +855,7 @@
 
 .mobile-package-card > p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.26rem;
+  font-size: 1.155rem;
   line-height: 1.7;
   color: #666;
   margin-bottom: 1.5rem;
@@ -932,7 +932,7 @@
   }
 
   .mobile-japanese-text {
-    font-size: 1.56rem;
+    font-size: 1.43rem;
   }
 
   .mobile-translation {
@@ -957,7 +957,7 @@
   }
 
   .mobile-office-city {
-    font-size: 1.38rem;
+    font-size: 1.265rem;
   }
 
   .mobile-office-separator {
@@ -1006,7 +1006,7 @@
   }
 
   .mobile-principle-card h4 {
-    font-size: 1.44rem;
+    font-size: 1.21rem;
   }
 
   .mobile-principle-card p {
@@ -1035,7 +1035,7 @@
   }
 
   .mobile-accordion-header h3 {
-    font-size: 1.44rem;
+    font-size: 1.21rem;
   }
 
   .mobile-accordion-content {
@@ -1056,7 +1056,7 @@
   }
 
   .mobile-cta p {
-    font-size: 1.32rem;
+    font-size: 1.21rem;
   }
 }
 
@@ -1092,7 +1092,7 @@
   }
 
   .mobile-japanese-text {
-    font-size: 1.44rem;
+    font-size: 1.21rem;
   }
 
   .mobile-translation {
@@ -1117,7 +1117,7 @@
   }
 
   .mobile-office-city {
-    font-size: 1.32rem;
+    font-size: 1.21rem;
   }
 
   .mobile-office-separator {
@@ -1176,7 +1176,7 @@
   }
 
   .mobile-principle-card h4 {
-    font-size: 1.38rem;
+    font-size: 1.265rem;
   }
 
   .mobile-principle-card p {
@@ -1206,7 +1206,7 @@
   }
 
   .mobile-accordion-header h3 {
-    font-size: 1.38rem;
+    font-size: 1.265rem;
   }
 
   .mobile-accordion-content {
@@ -1231,7 +1231,7 @@
   }
 
   .mobile-cta p {
-    font-size: 1.26rem;
+    font-size: 1.155rem;
   }
 
   .mobile-cta-button {

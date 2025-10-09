@@ -33,7 +33,7 @@
 
 .hero-intro p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   line-height: 1.9;
   color: #8b7355;
   font-weight: 600;
@@ -111,7 +111,7 @@
 
 .office-city {
   font-family: 'Crimson Text', serif;
-  font-size: 1.44rem;
+  font-size: 1.21rem;
   color: #666;
   font-weight: 600;
 }
@@ -196,7 +196,7 @@
 
 .quote-translation {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   color: #8b7355;
   font-style: italic;
   font-weight: 600;
@@ -215,7 +215,7 @@
 
 .philosophy-description p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   line-height: 2;
   color: #666;
   margin-bottom: 2rem;
@@ -292,7 +292,7 @@
 
 .expertise-column p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   line-height: 2;
   color: #666;
   margin-bottom: 2rem;
@@ -358,7 +358,7 @@
 
 .row-approach {
   font-family: 'Crimson Text', serif;
-  font-size: 1.38rem;
+  font-size: 1.265rem;
   line-height: 1.8;
   color: #666;
 }
@@ -382,7 +382,7 @@
 
 .cta-section p {
   font-family: 'Crimson Text', serif;
-  font-size: 1.56rem;
+  font-size: 1.43rem;
   line-height: 1.8;
   color: #666;
   margin-bottom: 3rem;
@@ -393,7 +393,7 @@
 
 .cta-button {
   font-family: 'Crimson Text', serif;
-  font-size: 1.32rem;
+  font-size: 1.21rem;
   background: #2c2c2c;
   color: white;
   border: 1px solid #2c2c2c;
@@ -423,7 +423,7 @@
   }
 
   .hero-intro p {
-    font-size: 1.56rem;
+    font-size: 1.43rem;
   }
 
   .story-section {
@@ -446,7 +446,7 @@
   }
 
   .story-item p {
-    font-size: 1.56rem;
+    font-size: 1.43rem;
   }
 
   .partner-logos {
@@ -478,11 +478,11 @@
   }
 
   .principle-card h4 {
-    font-size: 1.56rem;
+    font-size: 1.43rem;
   }
 
   .principle-card p {
-    font-size: 1.56rem;
+    font-size: 1.43rem;
   }
 
   .cta-section {
