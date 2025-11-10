@@ -10,22 +10,20 @@ const About: React.FC = () => {
             <h2>Building Global Success</h2>
             <p>
               Founded on the principles of patience, persistence, and partnership, Nintai & Partners emerged from a deep understanding
-              that successful global expansion requires more than just strategy—it demands cultural intelligence, market insight,
+              that successful global expansion requires more than just strategy. It demands cultural intelligence, market insight,
               and unwavering commitment to our clients' success.
             </p>
             <div className="global-presence">
               <div className="headquarters">
                 <span className="location-label">Based in</span>
-                <span className="location-city">London, United Kingdom</span>
+                <span className="location-city">London</span>
               </div>
               <div className="offices">
                 <span className="location-label">With global presence in</span>
                 <div className="office-locations">
                   <span className="office-city">Berlin</span>
                   <span className="office-separator">•</span>
-                  <span className="office-city">Colombo</span>
-                  <span className="office-separator">•</span>
-                  <span className="office-city">Toronto</span>
+                  <span className="office-city">Tokyo</span>
                 </div>
               </div>
             </div>
@@ -51,8 +49,8 @@ const About: React.FC = () => {
 
               <div className="philosophy-quote-block">
                 <div className="quote-content">
-                  <p className="japanese-quote">忍耐は苦いが、その実はより甘い</p>
-                  <p className="quote-translation">"Patience is bitter, but its fruit is sweeter"</p>
+                  <p className="japanese-quote">忍耐を動に、志を歩に。</p>
+                  <p className="quote-translation">"Perseverance in motion. Purpose in every step".</p>
                 </div>
               </div>
 
@@ -74,7 +72,7 @@ const About: React.FC = () => {
               <div className="section-intro centered">
                 <h3>Our Expertise</h3>
                 <p className="section-description">
-                  Extensive experience from leading global organizations.
+                  Extensive experience from leading global organisations.
                 </p>
               </div>
 
@@ -90,8 +88,8 @@ const About: React.FC = () => {
                   competitive advantages across diverse industries.
                 </p>
                 <p>
-                  With a proven track record of consulting for Fortune 500 companies across technology, healthcare, manufacturing,
-                  and consumer goods sectors, we bring strategic insights and operational excellence to every engagement, ensuring
+                  With a proven track record of consulting for Fortune 500 companies across technology, manufacturing, FMCG
+                  and E-Commerce sectors, we bring strategic insights and operational excellence to every engagement, ensuring
                   measurable results and lasting transformation.
                 </p>
               </div>

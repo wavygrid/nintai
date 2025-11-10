@@ -31,7 +31,7 @@ const MobileLayout: React.FC = () => {
         "Go-to-market strategy",
         "Partnership development",
         "Regulatory compliance support",
-        "Brand localization",
+        "Brand localisation",
         "Launch execution"
       ],
       featured: true
@@ -39,7 +39,7 @@ const MobileLayout: React.FC = () => {
     {
       title: "Ongoing Advisory",
       timeline: "Retainer-based",
-      description: "Continuous strategic guidance for established international operations seeking optimization.",
+      description: "Continuous strategic guidance for established international operations seeking optimisation.",
       includes: [
         "Monthly strategic sessions",
         "Performance monitoring",
@@ -117,24 +117,22 @@ const MobileLayout: React.FC = () => {
             <div className="mobile-global-presence">
               <div className="mobile-headquarters">
                 <span className="mobile-location-label">Based in</span>
-                <span className="mobile-location-city">London, United Kingdom</span>
+                <span className="mobile-location-city">London</span>
               </div>
               <div className="mobile-offices">
                 <span className="mobile-location-label">With global presence in</span>
                 <div className="mobile-office-locations">
                   <span className="mobile-office-city">Berlin</span>
                   <span className="mobile-office-separator">•</span>
-                  <span className="mobile-office-city">Colombo</span>
-                  <span className="mobile-office-separator">•</span>
-                  <span className="mobile-office-city">Toronto</span>
+                  <span className="mobile-office-city">Tokyo</span>
                 </div>
               </div>
             </div>
 
             {/* Philosophy Quote */}
             <div className="mobile-philosophy-card">
-              <p className="mobile-japanese-text">忍耐は苦いが、その実はより甘い</p>
-              <p className="mobile-translation">"Patience is bitter, but its fruit is sweeter"</p>
+              <p className="mobile-japanese-text">忍耐を動に、志を歩に。</p>
+              <p className="mobile-translation">"Perseverance in motion. Purpose in every step".</p>
               <div className="mobile-philosophy-divider"></div>
               <p className="mobile-philosophy-text">
                 Nintai embodies the Japanese philosophy of endurance and perseverance. This principle guides our partnership approach—standing
@@ -150,8 +148,8 @@ const MobileLayout: React.FC = () => {
                 <div className="mobile-expertise-line"></div>
               </div>
               <p className="mobile-expertise-subtitle">
-                Our partners bring extensive experience from leading global organizations, with deep expertise in
-                navigating complex international markets across technology, healthcare, manufacturing, and consumer goods sectors.
+                Our partners bring extensive experience from leading global organisations, with deep expertise in
+                navigating complex international markets across technology, manufacturing, FMCG and E-Commerce sectors.
               </p>
               <div className="mobile-logo-showcase">
                 <img src="/logos/thomson-reuters.jpg" alt="Thomson Reuters" className="mobile-brand-logo" />
@@ -229,136 +227,7 @@ const MobileLayout: React.FC = () => {
             <div className="mobile-markets-section">
               <h3>Our Markets</h3>
               <div className="mobile-markets-grid">
-                {/* EU */}
-                <div className="mobile-market-region">
-                  <div className="mobile-region-map">
-                    <ComposableMap
-                      projection="geoMercator"
-                      projectionConfig={{
-                        scale: 350,
-                        center: [10, 52]
-                      }}
-                      width={300}
-                      height={300}
-                    >
-                      <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                        {({ geographies }) =>
-                          geographies.map((geo) => {
-                            const isEU =
-                              geo.properties.name === 'Germany' ||
-                              geo.properties.name === 'France' ||
-                              geo.properties.name === 'Italy' ||
-                              geo.properties.name === 'Spain' ||
-                              geo.properties.name === 'Netherlands' ||
-                              geo.properties.name === 'Belgium' ||
-                              geo.properties.name === 'Austria' ||
-                              geo.properties.name === 'Portugal';
-
-                            return (
-                              <Geography
-                                key={geo.rsmKey}
-                                geography={geo}
-                                fill={isEU ? "#8b7355" : "#e8e8e8"}
-                                stroke="#ffffff"
-                                strokeWidth={0.3}
-                                style={{
-                                  default: { outline: 'none' },
-                                  hover: { outline: 'none' },
-                                  pressed: { outline: 'none' },
-                                }}
-                              />
-                            );
-                          })
-                        }
-                      </Geographies>
-                    </ComposableMap>
-                  </div>
-                  <div className="mobile-region-label">EU</div>
-                </div>
-
-                {/* UK */}
-                <div className="mobile-market-region">
-                  <div className="mobile-region-map">
-                    <ComposableMap
-                      projection="geoMercator"
-                      projectionConfig={{
-                        scale: 1000,
-                        center: [-2, 54]
-                      }}
-                      width={300}
-                      height={300}
-                    >
-                      <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                        {({ geographies }) =>
-                          geographies.map((geo) => {
-                            const isUK = geo.properties.name === 'United Kingdom';
-
-                            return (
-                              <Geography
-                                key={geo.rsmKey}
-                                geography={geo}
-                                fill={isUK ? "#8b7355" : "#e8e8e8"}
-                                stroke="#ffffff"
-                                strokeWidth={0.3}
-                                style={{
-                                  default: { outline: 'none' },
-                                  hover: { outline: 'none' },
-                                  pressed: { outline: 'none' },
-                                }}
-                              />
-                            );
-                          })
-                        }
-                      </Geographies>
-                    </ComposableMap>
-                  </div>
-                  <div className="mobile-region-label">UK</div>
-                </div>
-
-                {/* Nordic */}
-                <div className="mobile-market-region">
-                  <div className="mobile-region-map">
-                    <ComposableMap
-                      projection="geoMercator"
-                      projectionConfig={{
-                        scale: 300,
-                        center: [18, 64]
-                      }}
-                      width={300}
-                      height={300}
-                    >
-                      <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                        {({ geographies }) =>
-                          geographies.map((geo) => {
-                            const isNordic =
-                              geo.properties.name === 'Sweden' ||
-                              geo.properties.name === 'Norway' ||
-                              geo.properties.name === 'Denmark' ||
-                              geo.properties.name === 'Finland';
-
-                            return (
-                              <Geography
-                                key={geo.rsmKey}
-                                geography={geo}
-                                fill={isNordic ? "#8b7355" : "#e8e8e8"}
-                                stroke="#ffffff"
-                                strokeWidth={0.3}
-                                style={{
-                                  default: { outline: 'none' },
-                                  hover: { outline: 'none' },
-                                  pressed: { outline: 'none' },
-                                }}
-                              />
-                            );
-                          })
-                        }
-                      </Geographies>
-                    </ComposableMap>
-                  </div>
-                  <div className="mobile-region-label">Nordic</div>
-                </div>
-
-                {/* Asia */}
+                {/* APAC */}
                 <div className="mobile-market-region">
                   <div className="mobile-region-map">
                     <ComposableMap
@@ -373,17 +242,20 @@ const MobileLayout: React.FC = () => {
                       <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
                         {({ geographies }) =>
                           geographies.map((geo) => {
-                            const isAsia =
+                            const isAPAC =
                               geo.properties.name === 'India' ||
                               geo.properties.name === 'Singapore' ||
                               geo.properties.name === 'Japan' ||
-                              geo.properties.name === 'Sri Lanka';
+                              geo.properties.name === 'China' ||
+                              geo.properties.name === 'Australia' ||
+                              geo.properties.name === 'New Zealand' ||
+                              geo.properties.name === 'South Korea';
 
                             return (
                               <Geography
                                 key={geo.rsmKey}
                                 geography={geo}
-                                fill={isAsia ? "#8b7355" : "#e8e8e8"}
+                                fill={isAPAC ? "#8b7355" : "#e8e8e8"}
                                 stroke="#ffffff"
                                 strokeWidth={0.3}
                                 style={{
@@ -398,7 +270,145 @@ const MobileLayout: React.FC = () => {
                       </Geographies>
                     </ComposableMap>
                   </div>
-                  <div className="mobile-region-label">Asia</div>
+                  <div className="mobile-region-label">APAC</div>
+                </div>
+
+                {/* EMEA */}
+                <div className="mobile-market-region">
+                  <div className="mobile-region-map">
+                    <ComposableMap
+                      projection="geoMercator"
+                      projectionConfig={{
+                        scale: 250,
+                        center: [15, 50]
+                      }}
+                      width={300}
+                      height={300}
+                    >
+                      <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                        {({ geographies }) =>
+                          geographies.map((geo) => {
+                            const isEMEA =
+                              geo.properties.name === 'Germany' ||
+                              geo.properties.name === 'France' ||
+                              geo.properties.name === 'Italy' ||
+                              geo.properties.name === 'Spain' ||
+                              geo.properties.name === 'Netherlands' ||
+                              geo.properties.name === 'Belgium' ||
+                              geo.properties.name === 'Austria' ||
+                              geo.properties.name === 'Portugal' ||
+                              geo.properties.name === 'Sweden' ||
+                              geo.properties.name === 'Norway' ||
+                              geo.properties.name === 'Denmark' ||
+                              geo.properties.name === 'Finland' ||
+                              geo.properties.name === 'Poland' ||
+                              geo.properties.name === 'Czech Republic' ||
+                              geo.properties.name === 'South Africa' ||
+                              geo.properties.name === 'United Arab Emirates';
+
+                            return (
+                              <Geography
+                                key={geo.rsmKey}
+                                geography={geo}
+                                fill={isEMEA ? "#8b7355" : "#e8e8e8"}
+                                stroke="#ffffff"
+                                strokeWidth={0.3}
+                                style={{
+                                  default: { outline: 'none' },
+                                  hover: { outline: 'none' },
+                                  pressed: { outline: 'none' },
+                                }}
+                              />
+                            );
+                          })
+                        }
+                      </Geographies>
+                    </ComposableMap>
+                  </div>
+                  <div className="mobile-region-label">EMEA</div>
+                </div>
+
+                {/* UKI */}
+                <div className="mobile-market-region">
+                  <div className="mobile-region-map">
+                    <ComposableMap
+                      projection="geoMercator"
+                      projectionConfig={{
+                        scale: 1000,
+                        center: [-2, 54]
+                      }}
+                      width={300}
+                      height={300}
+                    >
+                      <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                        {({ geographies }) =>
+                          geographies.map((geo) => {
+                            const isUKI =
+                              geo.properties.name === 'United Kingdom' ||
+                              geo.properties.name === 'Ireland';
+
+                            return (
+                              <Geography
+                                key={geo.rsmKey}
+                                geography={geo}
+                                fill={isUKI ? "#8b7355" : "#e8e8e8"}
+                                stroke="#ffffff"
+                                strokeWidth={0.3}
+                                style={{
+                                  default: { outline: 'none' },
+                                  hover: { outline: 'none' },
+                                  pressed: { outline: 'none' },
+                                }}
+                              />
+                            );
+                          })
+                        }
+                      </Geographies>
+                    </ComposableMap>
+                  </div>
+                  <div className="mobile-region-label">UKI</div>
+                </div>
+
+                {/* North America */}
+                <div className="mobile-market-region">
+                  <div className="mobile-region-map">
+                    <ComposableMap
+                      projection="geoMercator"
+                      projectionConfig={{
+                        scale: 300,
+                        center: [-100, 50]
+                      }}
+                      width={300}
+                      height={300}
+                    >
+                      <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                        {({ geographies }) =>
+                          geographies.map((geo) => {
+                            const isNorthAmerica =
+                              geo.properties.name === 'United States of America' ||
+                              geo.properties.name === 'Canada' ||
+                              geo.properties.name === 'Mexico';
+
+                            return (
+                              <Geography
+                                key={geo.rsmKey}
+                                geography={geo}
+                                fill={isNorthAmerica ? "#8b7355" : "#e8e8e8"}
+                                stroke="#ffffff"
+                                strokeWidth={0.3}
+                                style={{
+                                  default: { outline: 'none' },
+                                  hover: { outline: 'none' },
+                                  pressed: { outline: 'none' },
+                                }}
+                              />
+                            );
+                          })
+                        }
+                      </Geographies>
+                    </ComposableMap>
+                  </div>
+                  <div className="mobile-region-label">North America</div>
                 </div>
               </div>
             </div>
@@ -474,7 +484,7 @@ const MobileLayout: React.FC = () => {
 
             <div className="mobile-cta">
               <h3>Ready to Accelerate Your Global Success?</h3>
-              <p>Our team of experts is ready to develop a customized strategy that meets your unique business needs and market objectives.</p>
+              <p>Our team of experts is ready to develop a customised strategy that meets your unique business needs and market objectives.</p>
               <a href="/book-now" className="mobile-cta-button">Get Started Today</a>
             </div>
           </div>

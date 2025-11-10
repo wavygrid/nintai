@@ -27,136 +27,7 @@ const Services: React.FC = () => {
               </div>
               <div className="stat-item markets-stat">
                 <div className="markets-grid">
-                  {/* EU */}
-                  <div className="market-region">
-                    <div className="region-map">
-                      <ComposableMap
-                        projection="geoMercator"
-                        projectionConfig={{
-                          scale: 350,
-                          center: [10, 52]
-                        }}
-                        width={300}
-                        height={300}
-                      >
-                        <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                          {({ geographies }) =>
-                            geographies.map((geo) => {
-                              const isEU =
-                                geo.properties.name === 'Germany' ||
-                                geo.properties.name === 'France' ||
-                                geo.properties.name === 'Italy' ||
-                                geo.properties.name === 'Spain' ||
-                                geo.properties.name === 'Netherlands' ||
-                                geo.properties.name === 'Belgium' ||
-                                geo.properties.name === 'Austria' ||
-                                geo.properties.name === 'Portugal';
-
-                              return (
-                                <Geography
-                                  key={geo.rsmKey}
-                                  geography={geo}
-                                  fill={isEU ? "#8b7355" : "#e8e8e8"}
-                                  stroke="#ffffff"
-                                  strokeWidth={0.3}
-                                  style={{
-                                    default: { outline: 'none' },
-                                    hover: { outline: 'none' },
-                                    pressed: { outline: 'none' },
-                                  }}
-                                />
-                              );
-                            })
-                          }
-                        </Geographies>
-                      </ComposableMap>
-                    </div>
-                    <div className="region-label">EU</div>
-                  </div>
-
-                  {/* UK */}
-                  <div className="market-region">
-                    <div className="region-map">
-                      <ComposableMap
-                        projection="geoMercator"
-                        projectionConfig={{
-                          scale: 1000,
-                          center: [-2, 54]
-                        }}
-                        width={300}
-                        height={300}
-                      >
-                        <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                          {({ geographies }) =>
-                            geographies.map((geo) => {
-                              const isUK = geo.properties.name === 'United Kingdom';
-
-                              return (
-                                <Geography
-                                  key={geo.rsmKey}
-                                  geography={geo}
-                                  fill={isUK ? "#8b7355" : "#e8e8e8"}
-                                  stroke="#ffffff"
-                                  strokeWidth={0.3}
-                                  style={{
-                                    default: { outline: 'none' },
-                                    hover: { outline: 'none' },
-                                    pressed: { outline: 'none' },
-                                  }}
-                                />
-                              );
-                            })
-                          }
-                        </Geographies>
-                      </ComposableMap>
-                    </div>
-                    <div className="region-label">UK</div>
-                  </div>
-
-                  {/* Nordic */}
-                  <div className="market-region">
-                    <div className="region-map">
-                      <ComposableMap
-                        projection="geoMercator"
-                        projectionConfig={{
-                          scale: 300,
-                          center: [18, 64]
-                        }}
-                        width={300}
-                        height={300}
-                      >
-                        <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
-                          {({ geographies }) =>
-                            geographies.map((geo) => {
-                              const isNordic =
-                                geo.properties.name === 'Sweden' ||
-                                geo.properties.name === 'Norway' ||
-                                geo.properties.name === 'Denmark' ||
-                                geo.properties.name === 'Finland';
-
-                              return (
-                                <Geography
-                                  key={geo.rsmKey}
-                                  geography={geo}
-                                  fill={isNordic ? "#8b7355" : "#e8e8e8"}
-                                  stroke="#ffffff"
-                                  strokeWidth={0.3}
-                                  style={{
-                                    default: { outline: 'none' },
-                                    hover: { outline: 'none' },
-                                    pressed: { outline: 'none' },
-                                  }}
-                                />
-                              );
-                            })
-                          }
-                        </Geographies>
-                      </ComposableMap>
-                    </div>
-                    <div className="region-label">Nordic</div>
-                  </div>
-
-                  {/* Asia */}
+                  {/* APAC */}
                   <div className="market-region">
                     <div className="region-map">
                       <ComposableMap
@@ -171,17 +42,20 @@ const Services: React.FC = () => {
                         <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
                           {({ geographies }) =>
                             geographies.map((geo) => {
-                              const isAsia =
+                              const isAPAC =
                                 geo.properties.name === 'India' ||
                                 geo.properties.name === 'Singapore' ||
                                 geo.properties.name === 'Japan' ||
-                                geo.properties.name === 'Sri Lanka';
+                                geo.properties.name === 'China' ||
+                                geo.properties.name === 'Australia' ||
+                                geo.properties.name === 'New Zealand' ||
+                                geo.properties.name === 'South Korea';
 
                               return (
                                 <Geography
                                   key={geo.rsmKey}
                                   geography={geo}
-                                  fill={isAsia ? "#8b7355" : "#e8e8e8"}
+                                  fill={isAPAC ? "#8b7355" : "#e8e8e8"}
                                   stroke="#ffffff"
                                   strokeWidth={0.3}
                                   style={{
@@ -196,7 +70,145 @@ const Services: React.FC = () => {
                         </Geographies>
                       </ComposableMap>
                     </div>
-                    <div className="region-label">Asia</div>
+                    <div className="region-label">APAC</div>
+                  </div>
+
+                  {/* EMEA */}
+                  <div className="market-region">
+                    <div className="region-map">
+                      <ComposableMap
+                        projection="geoMercator"
+                        projectionConfig={{
+                          scale: 250,
+                          center: [15, 50]
+                        }}
+                        width={300}
+                        height={300}
+                      >
+                        <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                          {({ geographies }) =>
+                            geographies.map((geo) => {
+                              const isEMEA =
+                                geo.properties.name === 'Germany' ||
+                                geo.properties.name === 'France' ||
+                                geo.properties.name === 'Italy' ||
+                                geo.properties.name === 'Spain' ||
+                                geo.properties.name === 'Netherlands' ||
+                                geo.properties.name === 'Belgium' ||
+                                geo.properties.name === 'Austria' ||
+                                geo.properties.name === 'Portugal' ||
+                                geo.properties.name === 'Sweden' ||
+                                geo.properties.name === 'Norway' ||
+                                geo.properties.name === 'Denmark' ||
+                                geo.properties.name === 'Finland' ||
+                                geo.properties.name === 'Poland' ||
+                                geo.properties.name === 'Czech Republic' ||
+                                geo.properties.name === 'South Africa' ||
+                                geo.properties.name === 'United Arab Emirates';
+
+                              return (
+                                <Geography
+                                  key={geo.rsmKey}
+                                  geography={geo}
+                                  fill={isEMEA ? "#8b7355" : "#e8e8e8"}
+                                  stroke="#ffffff"
+                                  strokeWidth={0.3}
+                                  style={{
+                                    default: { outline: 'none' },
+                                    hover: { outline: 'none' },
+                                    pressed: { outline: 'none' },
+                                  }}
+                                />
+                              );
+                            })
+                          }
+                        </Geographies>
+                      </ComposableMap>
+                    </div>
+                    <div className="region-label">EMEA</div>
+                  </div>
+
+                  {/* UKI */}
+                  <div className="market-region">
+                    <div className="region-map">
+                      <ComposableMap
+                        projection="geoMercator"
+                        projectionConfig={{
+                          scale: 1000,
+                          center: [-2, 54]
+                        }}
+                        width={300}
+                        height={300}
+                      >
+                        <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                          {({ geographies }) =>
+                            geographies.map((geo) => {
+                              const isUKI =
+                                geo.properties.name === 'United Kingdom' ||
+                                geo.properties.name === 'Ireland';
+
+                              return (
+                                <Geography
+                                  key={geo.rsmKey}
+                                  geography={geo}
+                                  fill={isUKI ? "#8b7355" : "#e8e8e8"}
+                                  stroke="#ffffff"
+                                  strokeWidth={0.3}
+                                  style={{
+                                    default: { outline: 'none' },
+                                    hover: { outline: 'none' },
+                                    pressed: { outline: 'none' },
+                                  }}
+                                />
+                              );
+                            })
+                          }
+                        </Geographies>
+                      </ComposableMap>
+                    </div>
+                    <div className="region-label">UKI</div>
+                  </div>
+
+                  {/* North America */}
+                  <div className="market-region">
+                    <div className="region-map">
+                      <ComposableMap
+                        projection="geoMercator"
+                        projectionConfig={{
+                          scale: 300,
+                          center: [-100, 50]
+                        }}
+                        width={300}
+                        height={300}
+                      >
+                        <Geographies geography="https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json">
+                          {({ geographies }) =>
+                            geographies.map((geo) => {
+                              const isNorthAmerica =
+                                geo.properties.name === 'United States of America' ||
+                                geo.properties.name === 'Canada' ||
+                                geo.properties.name === 'Mexico';
+
+                              return (
+                                <Geography
+                                  key={geo.rsmKey}
+                                  geography={geo}
+                                  fill={isNorthAmerica ? "#8b7355" : "#e8e8e8"}
+                                  stroke="#ffffff"
+                                  strokeWidth={0.3}
+                                  style={{
+                                    default: { outline: 'none' },
+                                    hover: { outline: 'none' },
+                                    pressed: { outline: 'none' },
+                                  }}
+                                />
+                              );
+                            })
+                          }
+                        </Geographies>
+                      </ComposableMap>
+                    </div>
+                    <div className="region-label">North America</div>
                   </div>
                 </div>
               </div>
@@ -229,7 +241,7 @@ const Services: React.FC = () => {
                   <div className="row-description">
                     From distributor identification to contract negotiation, we manage the full partner lifecycle. Our work includes
                     partner vetting with due diligence, agreement structuring, onboarding coordination, and performance management.
-                    We bring existing networks across EU, UK, Nordic, and Asian markets while building new relationships specific
+                    We bring existing networks across the EMEA, UKI, North American and APAC regions while building new relationships specific
                     to your sector and growth objectives.
                   </div>
                 </div>
@@ -239,7 +251,7 @@ const Services: React.FC = () => {
                   <div className="row-description">
                     Cultural adaptation goes beyond translation. We develop market-specific messaging frameworks, value proposition
                     refinement, and positioning strategies that resonate locally. This includes competitive differentiation analysis,
-                    pricing strategy localization, and brand architecture decisions for international portfolios.
+                    pricing strategy localisation, and brand architecture decisions for international portfolios.
                   </div>
                 </div>
 
@@ -262,9 +274,9 @@ const Services: React.FC = () => {
                 <div className="benefits-intro">
                   <h3>Who Benefits Most</h3>
                   <p>
-                    Our clients are typically mid-market to enterprise organizations with proven domestic success,
-                    seeking disciplined international expansion. Common characteristics include revenue between $10M-$500M,
-                    established product-market fit, and senior leadership commitment to multi-year market development.
+                    Our clients are typically scale-ups and mid-market to enterprise organisations with proven domestic success,
+                    seeking structured international expansion. They commonly have revenues between $500k and $500M, an established
+                    product-market fit, and a senior leadership team committed to multi-year market development.
                   </p>
                 </div>
 
@@ -272,7 +284,7 @@ const Services: React.FC = () => {
                   <div className="scenario-card">
                     <div className="scenario-tag">B2B SaaS</div>
                     <h4>European Expansion for US Software Company</h4>
-                    <p>Navigating GDPR compliance, VAT structures, and local cloud infrastructure requirements while building reseller networks across UK, DACH, and Nordic regions.</p>
+                    <p>Navigating GDPR compliance, VAT structures, and local cloud infrastructure requirements while building partnerships and reseller networks across UKI, DACH, Nordic and APAC regions.</p>
                   </div>
 
                   <div className="scenario-card">
@@ -331,7 +343,7 @@ const Services: React.FC = () => {
                     <span>Go-to-market strategy</span>
                     <span>Partnership development</span>
                     <span>Regulatory compliance support</span>
-                    <span>Brand localization</span>
+                    <span>Brand localisation</span>
                     <span>Launch execution</span>
                   </div>
                 </div>
@@ -342,7 +354,7 @@ const Services: React.FC = () => {
                     <p className="package-timeline">Retainer-based</p>
                   </div>
                   <p className="package-description">
-                    Continuous strategic guidance for established international operations seeking optimization.
+                    Continuous strategic guidance for established international operations seeking optimisation.
                   </p>
                   <div className="package-includes">
                     <span>Monthly strategic sessions</span>
@@ -359,7 +371,7 @@ const Services: React.FC = () => {
           <div className="cta-section">
             <h2>Ready to Accelerate Your Global Success?</h2>
             <p>
-              Our team of experts is ready to develop a customized strategy that meets your unique business needs
+              Our team of experts is ready to develop a customised strategy that meets your unique business needs
               and market objectives. Let's discuss how we can help you achieve sustainable growth.
             </p>
             <a href="/book-now" className="cta-button">Get Started Today</a>
