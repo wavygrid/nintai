@@ -37,7 +37,7 @@
   line-height: 1.9;
   color: #8b7355;
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
 }
 
 .hero-stats {
@@ -243,7 +243,7 @@
   font-family: 'Crimson Text', serif;
   font-size: 1.4rem;
   color: #8b7355;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.6;
 }
 
@@ -525,7 +525,7 @@
   font-family: 'Crimson Text', serif;
   font-size: 1.4rem;
   color: #8b7355;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.6;
 }
 

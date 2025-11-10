@@ -79,7 +79,7 @@
   font-size: 1.21rem;
   color: #8b7355;
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: 0.5px;
 }
 
@@ -118,7 +118,7 @@
   font-family: 'Crimson Text', serif;
   font-size: 1rem;
   color: rgba(255, 255, 255, 0.8);
-  font-style: italic;
+  font-style: normal;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
@@ -639,7 +639,7 @@
   font-family: 'Crimson Text', serif;
   font-size: 1.155rem;
   color: #8b7355;
-  font-style: italic;
+  font-style: normal;
   text-align: center;
   margin-bottom: 2.5rem;
 }
@@ -784,7 +784,7 @@
   font-family: 'Crimson Text', serif;
   font-size: 1.155rem;
   color: #8b7355;
-  font-style: italic;
+  font-style: normal;
   text-align: center;
   margin-bottom: 2.5rem;
 }
