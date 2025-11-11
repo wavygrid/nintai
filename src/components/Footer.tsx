@@ -14,9 +14,7 @@ const Footer: React.FC = () => {
             <span className="footer-location-separator">•</span>
             <span>Berlin</span>
             <span className="footer-location-separator">•</span>
-            <span>Colombo</span>
-            <span className="footer-location-separator">•</span>
-            <span>Toronto</span>
+            <span>Tokyo</span>
           </div>
         </div>
 
