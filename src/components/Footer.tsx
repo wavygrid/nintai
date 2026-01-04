@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="footer-right">
-          <p className="footer-copyright">© 2025 Nintai & Partners. All rights reserved.</p>
+          <p className="footer-copyright">© 2026 Nintai & Partners. All rights reserved.</p>
         </div>
       </div>
     </footer>
