@@ -110,7 +110,7 @@ const MobileLayout: React.FC = () => {
             {/* Hero Statement */}
             <div className="mobile-about-hero">
               <h2>Building Global Success</h2>
-              <p className="mobile-about-tagline">Where patience meets performance</p>
+              <p className="mobile-about-tagline">Perseverance in motion, purpose in every step.</p>
             </div>
 
             {/* Global Presence */}
